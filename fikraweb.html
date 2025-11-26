@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مركز فكرة التعليمي</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #fff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #007B76;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 55px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #B03C86;
+    }
+
+    /* ============ HERO SECTION ============ */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to bottom left, #007B76, #B03C86);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      line-height: 1.8;
+    }
+
+    .hero button {
+      background-color: white;
+      color: #007B76;
+      border: none;
+      padding: 12px 35px;
+      border-radius: 25px;
+      font-size: 1em;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .hero button:hover {
+      background-color: #B03C86;
+      color: white;
+    }
+
+    /* ============ SECTIONS ============ */
+    section {
+      padding: 100px 50px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #007B76;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    /* ============ TEACHERS ============ */
+    .teachers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .teacher-card {
+      background-color: #F7F7F7;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .teacher-card:hover {
+      background-color: #007B76;
+      color: white;
+      transform: translateY(-5px);
+    }
+
+    .teacher-card h3 {
+      color: #B03C86;
+      margin-bottom: 10px;
+    }
+
+    .teacher-card:hover h3 {
+      color: white;
+    }
+
+    /* ============ CONTACT ============ */
+    .contact-info {
+      text-align: center;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+
+    .contact-info a {
+      color: #B03C86;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* ============ FOOTER ============ */
+    footer {
+      background-color: #007B76;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.95em;
+    }
+
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      .hero h1 {
+        font-size: 2.2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+  <img src="logo.png" alt="شعار مركز فِكرة">
+    <nav>
+    <a href="#about">عن المركز</a>
+    <a href="#courses">الدورات</a>
+    <a href="#teachers">الكادر التعليمي</a>
+    <a href="#exams">الامتحانات</a>
+    <a href="#resources">مراجع الأمهات</a>
+    <a href="#multiplication-games">ألعاب جداول الضرب</a>
+    <a href="#educational-sites">مواقع تعليمية مفيدة</a>
+    <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <h1>مركز فكرة التعليمي</h1>
+    <p>نربط التعليم بالحياة من خلال برامج تعليمية متكاملة من الروضة وحتى الصف العاشر، ودورات تأسيس وتهيئة متميزة.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">تواصل معنا</button>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>عن مركز فكرة</h2>
+    <p>
+      مركز فكرة التعليمي يهدف إلى تقديم تعليم نوعي متميز يعتمد على الفهم والتطبيق،  
+      من خلال متابعة المناهج الدراسية، ودروس التقوية، ودورات التأسيس،  
+      بالإضافة إلى إعداد طلاب التوجيهي ومساعدة الطلبة على تطوير مهارات القراءة والكتابة.
+    </p>
+  </section>
+
+  <!-- TEACHERS -->
+  <section id="teachers">
+    <h2>كادرنا التعليمي</h2>
+    <div class="teachers">
+      <div class="teacher-card">
+        <h3>المشرفة التربوية سهيلة علان</h3>
+        <p>من الصف الأول حتى السادس – جميع المواد + التأسيس</p>
+      </div>
+      <div class="teacher-card">
+        <h3>محمد السرحان</h3>
+        <p>الصف التاسع والعاشر – رياضيات، فيزياء، كيمياء</p>
+      </div>
+      <div class="teacher-card">
+        <h3>مروان الشيخ</h3>
+        <p>الصف السابع والثامن والتاسع والعاشر – اللغة الإنجليزية</p>
+      </div>
+      <div class="teacher-card">
+        <h3>راشد ذياب</h3>
+        <p>الصف السابع والثامن – رياضيات</p>
+      </div>
+      <div class="teacher-card">
+        <h3>أحمد العونة</h3>
+        <p>الصف التاسع والعاشر و2008 – اللغة العربية</p>
+      </div>
+      <div class="teacher-card">
+        <h3>المعلمة زينة</h3>
+        <p>الصف السابع والثامن – اللغة العربية</p>
+      </div>
+      <div class="teacher-card">
+        <h3>المعلمة رهف</h3>
+        <p>من الصف الأول حتى العاشر – اللغة الإنجليزية</p>
+      </div>
+      <div class="teacher-card">
+        <h3>أنس عليان</h3>
+        <p>شعبتي 2008 / 2009 – اللغة الإنجليزية</p>
+      </div>
+      <div class="teacher-card">
+        <h3>عبد الفتاح البرغوثي</h3>
+        <p>شعبتي 2009 – اللغة العربية</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- EXAMS SECTION -->
+<section id="exams">
+  <h2>قسم الامتحانات</h2>
+
+  <!-- الشهر الأول -->
+  <h3>الشهر الأول</h3>
+  <div class="exam-card">
+    <h4>رياضيات - الصف السابع</h4>
+    <a href="https://drive.google.com/uc?export=download&id=FILE_ID_1" target="_blank">تحميل PDF</a>
+  </div>
+  <div class="exam-card">
+    <h4>اللغة العربية - الصف السابع</h4>
+    <a href="https://drive.google.com/uc?export=download&id=FILE_ID_2" target="_blank">تحميل PDF</a>
+  </div>
+
+  <!-- يمكنك إضافة كل المواد الأخرى بنفس الطريقة -->
+  <div class="exam-card">
+    <h4>الإنجليزية - الصف السابع</h4>
+    <a href="https://drive.google.com/uc?export=download&id=FILE_ID_3" target="_blank">تحميل PDF</a>
+  </div>
+
+  <!-- الشهر الثاني -->
+  <h3>الشهر الثاني</h3>
+  <div class="exam-card">
+    <h4>رياضيات - الصف السابع</h4>
+    <a href="https://drive.google.com/uc?export=download&id=FILE_ID_4" target="_blank">تحميل PDF</a>
+  </div>
+  <div class="exam-card">
+    <h4>اللغة العربية - الصف السابع</h4>
+    <a href="https://drive.google.com/uc?export=download&id=FILE_ID_5" target="_blank">تحميل PDF</a>
+  </div>
+  <div class="exam-card">
+    <h4>الإنجليزية - الصف السابع</h4>
+    <a href="https://drive.google.com/uc?export=download&id=FILE_ID_6" target="_blank">تحميل PDF</a>
+  </div>
+</section>
+
+<!-- قسم مراجع للأمهات -->
+<section id="resources" style="padding:100px 50px; max-width:1100px; margin:auto; text-align:center;">
+  <h2 style="color:#007B76; font-size:2em; margin-bottom:40px;">مراجع للأمهات</h2>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:30px;">
+
+    <a href="https://www.math-drills.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">Math-Drills.com</h3>
+        <p>يحتوي على مئات أوراق العمل القابلة للطباعة لكل جداول الضرب (من 1 إلى 12). تحميل PDF، مراجعة، اختبارات، وألعاب رقمية بسيطة.</p>
+      </div>
+    </a>
+
+    <a href="https://www.superteacherworksheets.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">SuperTeacherWorksheets.com</h3>
+        <p>أوراق عمل رائعة للتدريب على جداول الضرب، للطباعة أو تفاعلية، بعضها مجاني وبعضها يحتاج اشتراك.</p>
+      </div>
+    </a>
+
+    <a href="https://www.twinkl.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">Twinkl.com</h3>
+        <p>موقع تعليمي شهير مع أوراق ملونة وملفات PDF للطباعة، ألعاب وملصقات لجداول الضرب.</p>
+      </div>
+    </a>
+
+    <a href="https://www.math-aids.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">Math-Aids.com</h3>
+        <p>يمكنك إنشاء أوراق عمل بنفسك واختيار الجدول وعدد الأسئلة، ثم تحميلها فورًا بصيغة PDF.</p>
+      </div>
+    </a>
+
+     </div>
+</section>
+
+<!-- قسم ألعاب جداول الضرب -->
+<section id="multiplication-games" style="padding:100px 50px; max-width:1100px; margin:auto; text-align:center;">
+  <h2 style="color:#007B76; font-size:2em; margin-bottom:40px;">ألعاب لحفظ جداول الضرب</h2>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:30px;">
+
+    <a href="https://www.multiplication.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">Multiplication.com</h3>
+        <p>ألعاب كثيرة لتقوية حفظ الجداول من 1 إلى 12 بطريقة ممتعة، مجانية ومناسبة للصفوف الابتدائية.</p>
+      </div>
+    </a>
+
+    <a href="https://www.coolmath4kids.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">CoolMath4Kids.com</h3>
+        <p>ألعاب تفاعلية وتمارين فورية بجداول الضرب، ممتع جدًا للطلاب ويشجع على الحفظ من خلال التحديات.</p>
+      </div>
+    </a>
+
+    <a href="https://www.splashlearn.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">SplashLearn.com</h3>
+        <p>موقع تفاعلي ممتاز يحتوي على ألعاب جداول الضرب بالصور والصوت، يمكن للطفل اللعب مجانًا بدون تحميل.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- قسم مواقع تعليمية عربية وعالمية -->
+<section id="educational-sites" style="padding:100px 50px; max-width:1100px; margin:auto; text-align:center;">
+  <h2 style="color:#007B76; font-size:2em; margin-bottom:40px;">مواقع تعليمية مفيدة</h2>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:30px;">
+
+    <!-- مواقع عربية -->
+ 
+
+
+    <a href="https://www.nafham.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">نفهم (Nafham.com)</h3>
+        <p>فيديوهات تفاعلية مبسطة للمناهج العربية من الصف الأول حتى الثالث الإعدادي.</p>
+      </div>
+    </a>
+
+    <a href="https://www.edraak.org" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">إدراك (Edraak.org)</h3>
+        <p>قسم "إدراك للأطفال" لتقوية مهارات القراءة والكتابة بالعربية.</p>
+      </div>
+    </a>
+
+   
+    <!-- مواقع عالمية -->
+    <a href="https://www.starfall.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">Starfall.com</h3>
+        <p>تعليم القراءة والكتابة للأطفال بطريقة ممتعة وتفاعلية.</p>
+      </div>
+    </a>
+
+    <a href="https://www.abcya.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">ABCya.com</h3>
+        <p>ألعاب تعليمية في القراءة والكتابة والرياضيات للصفوف الابتدائية.</p>
+      </div>
+    </a>
+
+    <a href="https://www.ixl.com" target="_blank" style="text-decoration:none; color:inherit;">
+      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+        <h3 style="color:#B03C86; margin-bottom:10px;">IXL.com</h3>
+        <p>موقع متكامل لتدريب الطلاب على مهارات القراءة والكتابة من الصف الأول حتى الثانوي.</p>
+      </div>
+    </a>
+
+  </div>
+
+<a href="https://play.google.com/store/apps/details?id=com.ewa.app" target="_blank" style="text-decoration:none; color:inherit;">
+  <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
+    <h3 style="color:#B03C86; margin-bottom:10px;">تطبيق EWA لتعلم الإنجليزية</h3>
+    <p>تعلم الإنجليزية بطريقة ممتعة من خلال دروس قصيرة، ألعاب وكتب صوتية. متاح على Google Play و App Store.</p>
+  </div>
+</a>
+
+</section>
+
+  <!-- CONTACT -->
+<section id="contact">
+  <h2>تواصل معنا</h2>
+  <div class="contact-info">
+    <p>📍 <strong>الموقع:</strong> طبربور - شارع النهضة - بجانب الصفا مول</p>
+    <p>📞 <strong>الهاتف:</strong> <a href="tel:+962796549485">0796549485</a></p>
+      <p>📱 تابعونا على:
+      <a href="https://www.instagram.com/fikraedujo" target="_blank">إنستغرام</a> و
+      <a href="https://www.facebook.com/fikraonlinejo" target="_blank">فيسبوك</a>
+    </p>
+  </div>
+
+<!-- QR CODE -->
+<div style="text-align:center; margin-top:40px;">
+  <p style="font-weight:bold; margin-bottom:15px;">
+    امسح أو اضغط على الكود للوصول إلى موقع مركز فِكرة:
+  </p>
+  <a href="https://www.dropbox.com/scl/fi/5bav7lvddgxeeuzku7saa/Green-Yellow-Elegant-Minimalist-Client-Testimonials-Review-Instagram-Post.pdf.pdf?rlkey=oq1rvr5rbjtsp4lnt9jn5ubkh&st=h7k6jmcz&dl=0" target="_blank">
+    <img src="qr.png" alt="QR Code مركز فِكرة" 
+         style="width:160px; max-width:50%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:0.3s;">
+  </a>
+</div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    ©️ 2025 مركز فكرة التعليمي | ابدأ بها حياتك
+  </footer>
+
+</body>
+</html>
