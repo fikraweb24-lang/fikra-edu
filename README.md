@@ -105,7 +105,38 @@
       line-height: 1.8;
       text-align: center;
     }
+</section>
 
+  <!-- COURSES SECTION -->
+  <section id="courses">
+    <h2>الدورات والبرامج التعليمية</h2>
+    <div class="teachers">
+      <div class="teacher-card">
+        <h3>دورات القراءة والكتابة</h3>
+        <p>نُنمّي مهارات القراءة والكتابة بأساليب تفاعلية تناسب مختلف المراحل الدراسية.</p>
+      </div>
+      <div class="teacher-card">
+        <h3>دورات جداول الضرب</h3>
+        <p>تعليم وإتقان جداول الضرب بطريقة ممتعة وعملية تساعد على الفهم السريع.</p>
+      </div>
+      <div class="teacher-card">
+        <h3>الحقيبة المدرسية</h3>
+        <p>برنامج متكامل يطوّر قدرات الطلبة باستخدام وسائل تعليمية وأساليب تربوية حديثة.</p>
+      </div>
+      <div class="teacher-card">
+        <h3>متابعة المناهج الدراسية</h3>
+        <p>من الصف الأول حتى العاشر، متابعة دقيقة لجميع المواد لضمان الفهم والتميّز.</p>
+      </div>
+      <div class="teacher-card">
+        <h3>امتحانات تقييم دورية</h3>
+        <p>اختبارات منتظمة لقياس تقدّم الطلبة ودعم نقاط القوة وتعزيز المهارات.</p>
+      </div>
+      <div class="teacher-card">
+        <h3>قسم خاص للتوجيهي</h3>
+        <p>برامج تحضيرية متكاملة لتمكين طلاب التوجيهي من تحقيق نتائج متميزة بثقة.</p>
+      </div>
+    </div>
+  </section>
     /* ============ TEACHERS ============ */
     .teachers {
       display: grid;
@@ -180,14 +211,16 @@
   <header>
   <img src="logo.png" alt="شعار مركز فِكرة">
     <nav>
-    <a href="#about">عن المركز</a>
-    <a href="#courses">الدورات</a>
-    <a href="#teachers">الكادر التعليمي</a>
-    <a href="#exams">الامتحانات</a>
-    <a href="#resources">مراجع الأمهات</a>
-    <a href="#multiplication-games">ألعاب جداول الضرب</a>
-    <a href="#educational-sites">مواقع تعليمية مفيدة</a>
-    <a href="#contact">تواصل معنا</a>
+      <a href="#about">عن المركز</a>
+      <a href="#teachers">المعلمون</a>
+       <a href="#exams">الامتحانات</a>
+           <a href="#references">المراجع</a>
+           <a href="#games ">الالعاب</a>
+           <a href="#educational-websites  ">مواقع تعليمية</a>
+      <a href="#contact">تواصل معنا</a>
+     
+
+      
     </nav>
   </header>
 
@@ -289,130 +322,103 @@
   </div>
 </section>
 
-<!-- قسم مراجع للأمهات -->
-<section id="resources" style="padding:100px 50px; max-width:1100px; margin:auto; text-align:center;">
-  <h2 style="color:#007B76; font-size:2em; margin-bottom:40px;">مراجع للأمهات</h2>
 
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:30px;">
 
-    <a href="https://www.math-drills.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">Math-Drills.com</h3>
-        <p>يحتوي على مئات أوراق العمل القابلة للطباعة لكل جداول الضرب (من 1 إلى 12). تحميل PDF، مراجعة، اختبارات، وألعاب رقمية بسيطة.</p>
-      </div>
-    </a>
+<!-- مراجع الأمهات -->
+<section id="references">
+  <h2>مراجع للأمهات</h2>
+  <div class="grid">
+    <div class="teacher-card">
+      <div class="title">Math-Drills.com</div>
+      <p>مئات أوراق عمل قابلة للطباعة لجميع جداول الضرب (1–12)، مع PDF واختبارات.</p>
+      <a href="https://www.math-drills.com/" target="_blank">زيارة الموقع</a>
+    </div>
 
-    <a href="https://www.superteacherworksheets.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">SuperTeacherWorksheets.com</h3>
-        <p>أوراق عمل رائعة للتدريب على جداول الضرب، للطباعة أو تفاعلية، بعضها مجاني وبعضها يحتاج اشتراك.</p>
-      </div>
-    </a>
+    <div class="teacher-card">
+      <div class="title">SuperTeacherWorksheets.com</div>
+      <p>أوراق عمل جاهزة للطباعة أو تفاعلية لجداول الضرب، بعضها مجاني وبعضها يتطلب اشتراك.</p>
+      <a href="https://www.superteacherworksheets.com/" target="_blank">زيارة الموقع</a>
+    </div>
 
-    <a href="https://www.twinkl.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">Twinkl.com</h3>
-        <p>موقع تعليمي شهير مع أوراق ملونة وملفات PDF للطباعة، ألعاب وملصقات لجداول الضرب.</p>
-      </div>
-    </a>
+    <div class="teacher-card">
+      <div class="title">Twinkl.com</div>
+      <p>مواد تعليمية ملونة، أوراق عمل، ملفات PDF للطباعة، ألعاب وملصقات لجداول الضرب.</p>
+      <a href="https://www.twinkl.com/" target="_blank">زيارة الموقع</a>
+    </div>
 
-    <a href="https://www.math-aids.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">Math-Aids.com</h3>
-        <p>يمكنك إنشاء أوراق عمل بنفسك واختيار الجدول وعدد الأسئلة، ثم تحميلها فورًا بصيغة PDF.</p>
-      </div>
-    </a>
-
-     </div>
+    <div class="teacher-card">
+      <div class="title">Math-Aids.com</div>
+      <p>يمكنك إنشاء أوراق عمل بنفسك واختيار الجدول وعدد الأسئلة، ثم تحميلها فورًا بصيغة PDF.</p>
+      <a href="https://www.math-aids.com/" target="_blank">زيارة الموقع</a>
+    </div>
+  </div>
 </section>
 
-<!-- قسم ألعاب جداول الضرب -->
-<section id="multiplication-games" style="padding:100px 50px; max-width:1100px; margin:auto; text-align:center;">
-  <h2 style="color:#007B76; font-size:2em; margin-bottom:40px;">ألعاب لحفظ جداول الضرب</h2>
+<!-- ألعاب جدول الضرب -->
+<section id="games">
+  <h2>ألعاب جدول الضرب</h2>
 
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:30px;">
+    <div class="teacher-card">
+      <div class="title">Multiplication.com</div>
+      <p>ألعاب لتقوية حفظ الجداول 1–12 بطريقة ممتعة ومجانية.</p>
+      <a href="https://www.multiplication.com/" target="_blank">زيارة الموقع</a>
+    </div>
 
-    <a href="https://www.multiplication.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">Multiplication.com</h3>
-        <p>ألعاب كثيرة لتقوية حفظ الجداول من 1 إلى 12 بطريقة ممتعة، مجانية ومناسبة للصفوف الابتدائية.</p>
-      </div>
-    </a>
+    <div class="teacher-card">
+      <div class="title">CoolMath4Kids.com</div>
+      <p>ألعاب وتمارين فورية بجدول الضرب، ممتعة وتشجع الطلاب على الممارسة.</p>
+      <a href="https://www.coolmath4kids.com/" target="_blank">زيارة الموقع</a>
+    </div>
 
-    <a href="https://www.coolmath4kids.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">CoolMath4Kids.com</h3>
-        <p>ألعاب تفاعلية وتمارين فورية بجداول الضرب، ممتع جدًا للطلاب ويشجع على الحفظ من خلال التحديات.</p>
-      </div>
-    </a>
-
-    <a href="https://www.splashlearn.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">SplashLearn.com</h3>
-        <p>موقع تفاعلي ممتاز يحتوي على ألعاب جداول الضرب بالصور والصوت، يمكن للطفل اللعب مجانًا بدون تحميل.</p>
-      </div>
-    </a>
+    <div class="teacher-card">
+      <div class="title">SplashLearn.com</div>
+      <p>موقع تفاعلي يحتوي على ألعاب جد-ضرب بالصور والصوت — مثالي للأطفال.</p>
+      <a href="https://www.splashlearn.com/" target="_blank">زيارة الموقع</a>
 
   </div>
 </section>
 
-<!-- قسم مواقع تعليمية عربية وعالمية -->
-<section id="educational-sites" style="padding:100px 50px; max-width:1100px; margin:auto; text-align:center;">
-  <h2 style="color:#007B76; font-size:2em; margin-bottom:40px;">مواقع تعليمية مفيدة</h2>
+<!-- مواقع تعليمية مفيدة -->
+<section id="educational-websites">
+  <h2>مواقع تعليمية مفيدة</h2>
+  <div class="grid">
+    <div class="teacher-card">
+      <div class="title">نفهم (Nafham.com)</div>
+      <p>فيديوهات تفاعلية مبسطة للمناهج العربية من الصف الأول حتى الثالث الإعدادي.</p>
+      <a href="https://www.nafham.com/" target="_blank">زيارة الموقع</a>
+    </div>
 
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:30px;">
+    <div class="teacher-card">
+      <div class="title">إدراك (Edraak.org)</div>
+      <p>قسم "إدراك للأطفال" لتقوية مهارات القراءة والكتابة بالعربية.</p>
+      <a href="https://www.edraak.org/" target="_blank">زيارة الموقع</a>
+    </div>
 
-    <!-- مواقع عربية -->
- 
+    <div class="teacher-card">
+      <div class="title">Starfall.com</div>
+      <p>تعليم القراءة والكتابة للأطفال بطريقة ممتعة وتفاعلية.</p>
+      <a href="https://www.starfall.com/" target="_blank">زيارة الموقع</a>
+    </div>
 
+    <div class="teacher-card">
+      <div class="title">ABCya.com</div>
+      <p>ألعاب تعليمية في القراءة والكتابة والرياضيات للصفوف الابتدائية.</p>
+      <a href="https://www.abcya.com/" target="_blank">زيارة الموقع</a>
+    </div>
 
-    <a href="https://www.nafham.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">نفهم (Nafham.com)</h3>
-        <p>فيديوهات تفاعلية مبسطة للمناهج العربية من الصف الأول حتى الثالث الإعدادي.</p>
-      </div>
-    </a>
+    <div class="teacher-card">
+      <div class="title">IXL.com</div>
+      <p>موقع متكامل لتدريب الطلاب على مهارات القراءة والكتابة من الصف الأول حتى الثانوي.</p>
+      <a href="https://www.ixl.com/" target="_blank">زيارة الموقع</a>
+    </div>
 
-    <a href="https://www.edraak.org" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">إدراك (Edraak.org)</h3>
-        <p>قسم "إدراك للأطفال" لتقوية مهارات القراءة والكتابة بالعربية.</p>
-      </div>
-    </a>
-
-   
-    <!-- مواقع عالمية -->
-    <a href="https://www.starfall.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">Starfall.com</h3>
-        <p>تعليم القراءة والكتابة للأطفال بطريقة ممتعة وتفاعلية.</p>
-      </div>
-    </a>
-
-    <a href="https://www.abcya.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">ABCya.com</h3>
-        <p>ألعاب تعليمية في القراءة والكتابة والرياضيات للصفوف الابتدائية.</p>
-      </div>
-    </a>
-
-    <a href="https://www.ixl.com" target="_blank" style="text-decoration:none; color:inherit;">
-      <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-        <h3 style="color:#B03C86; margin-bottom:10px;">IXL.com</h3>
-        <p>موقع متكامل لتدريب الطلاب على مهارات القراءة والكتابة من الصف الأول حتى الثانوي.</p>
-      </div>
-    </a>
-
+    <div class="teacher-card">
+      <div class="title">تطبيق EWA لتعلم الإنجليزية</div>
+      <p>تعلم الإنجليزية بطريقة ممتعة من خلال دروس قصيرة، ألعاب وكتب صوتية.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.ewa.english" target="_blank">Google Play</a> |
+      <a href="https://apps.apple.com/app/ewa-english-language-learning/id1058107064" target="_blank">App Store</a>
+    </div>
   </div>
-
-<a href="https://play.google.com/store/apps/details?id=com.ewa.app" target="_blank" style="text-decoration:none; color:inherit;">
-  <div style="background:#F7F7F7; padding:25px; border-radius:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;">
-    <h3 style="color:#B03C86; margin-bottom:10px;">تطبيق EWA لتعلم الإنجليزية</h3>
-    <p>تعلم الإنجليزية بطريقة ممتعة من خلال دروس قصيرة، ألعاب وكتب صوتية. متاح على Google Play و App Store.</p>
-  </div>
-</a>
-
-</section>
 
   <!-- CONTACT -->
 <section id="contact">
@@ -443,6 +449,9 @@
   <footer>
     ©️ 2025 مركز فكرة التعليمي | ابدأ بها حياتك
   </footer>
+
+</body>
+</html>
 
 </body>
 </html>
